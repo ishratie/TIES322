@@ -1,0 +1,8 @@
+ip address add 1.2.0.2/30 dev eth0
+ip address add 11.0.0.29/30 dev eth1
+iptables -A FORWARD -i eth0 -o eth1 -s 40.40.0.0/16 -d 30.3.3.0/24 -j ACCEPT
+iptables -A FORWARD -i eth1 -o eth0 -s 30.3.3.0/24 -d 1.1.0.0/16 -j ACCEPT
+iptables -A FORWARD -i eth1 -o eth0 -s 30.3.3.0/24 -d 40.40.0.0/16 -j ACCEPT
+iptables -A FORWARD -i eth1 -j DROP
+iptables -A FORWARD -i eth0 -j DROP
+systemctl start quagga

@@ -1,0 +1,17 @@
+kathara-lab_two-levels-load-balancing
+alku: 12.13 23/8/2026
+loppu 15.42 23/8/2026
+
+bgp-ospf-rip-interplay
+alku: 10.10 24/8/2026
+loppu 12.42 24/8/2026
+
+kathara-lab_small-internet-with-dns-and-web-server
+
+alku: 12.03 25/8/2026
+loppu 12.57 25/8/2026
+
+kathara-lab_dns-load-balancer-with-rip
+
+alku: 12.57 25/8/2026
+loppu 14.04 25/8/2026
